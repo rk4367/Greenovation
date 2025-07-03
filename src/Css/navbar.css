@@ -1,0 +1,97 @@
+/* Walmart-style lower navigation bar */
+.walmart-nav {
+  background: #fff;
+  color: #003ca6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  font-size: 15px;
+  font-weight: 500;
+  height: 80px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.walmart-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 22px;
+}
+.walmart-nav-list li {
+  color: #003ca6;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 0 6px;
+  height: 32px;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.walmart-nav-list li:hover {
+  background: #e6f0ff;
+}
+.walmart-nav-icon {
+  font-weight: 700;
+  margin-right: 4px;
+}
+.walmart-nav-dropdown {
+  font-size: 12px;
+  margin-left: 2px;
+}
+.walmart-nav-green-btn-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.walmart-nav-green-btn {
+  background-color: #43b047;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(67, 176, 71, 0.10);
+  letter-spacing: 0.2px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.walmart-nav-green-btn:hover {
+  background-color: #309335;
+  box-shadow: 0 4px 12px rgba(67, 176, 71, 0.18);
+}
+
+@media (max-width: 900px) {
+  .walmart-nav {
+    font-size: 12px;
+    padding: 0 8px;
+    height: 32px;
+  }
+  .walmart-nav-list {
+    gap: 6px;
+  }
+  .walmart-nav-list li {
+    font-size: 11px;
+    height: 22px;
+  }
+  .walmart-nav-green-btn {
+    font-size: 11px;
+    padding: 0 10px;
+    height: 22px;
+  }
+}
+
+/* Remove old amazon-nav styles for clarity */
+.amazon-nav, .amazon-nav-list, .amazon-nav-list li, .greenovation-btn, .greenovation-btn-container {
+  all: unset;
+}

@@ -1,0 +1,152 @@
+/* Walmart-style lower navigation bar for Greenovation */
+.walmart-nav {
+  background: #fff;
+  color: #003ca6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 1px;
+  /* font-weight: 100; */
+  height: 50px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.walmart-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+}
+.walmart-nav-list li {
+  color: #003ca6;
+  display: flex;
+  align-items: center;
+  /* font-weight: 500; */
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 0 6px;
+  height: 32px;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.walmart-nav-list li:hover {
+  background: #e6f0ff;
+}
+.walmart-nav-link {
+  color: #003ca6;
+  text-decoration: none;
+  /* font-weight: 500;
+  font-size: 15px; */
+}
+.walmart-nav-link:hover {
+  text-decoration: underline;
+}
+.walmart-nav-green-btn-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.walmart-nav-green-btn {
+  background-color: #43b047;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(67, 176, 71, 0.10);
+  letter-spacing: 0.2px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.walmart-nav-green-btn:hover {
+  background-color: #309335;
+  box-shadow: 0 4px 12px rgba(67, 176, 71, 0.18);
+}
+
+@media (max-width: 900px) {
+  .walmart-nav {
+    font-size: 12px;
+    padding: 0 8px;
+    height: 32px;
+  }
+  .walmart-nav-list {
+    gap: 6px;
+  }
+  .walmart-nav-list li {
+    font-size: 11px;
+    height: 22px;
+  }
+  .walmart-nav-green-btn {
+    font-size: 11px;
+    padding: 0 10px;
+    height: 22px;
+  }
+}
+
+.amazon-nav {
+    background-color: #232f3e; /* Background color */
+    color: #ffffff; /* Text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the content */
+    padding: 5px 20px; /* Decreased top and bottom padding */
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px; /* Fixed height of the navigation bar */
+  }
+  
+  .amazon-nav-section {
+    display: flex;
+    align-items: center; /* Vertically center the list and button */
+  }
+  
+  .amazon-nav-list {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    padding: 10px 10px;
+  }
+  
+  .amazon-nav-list li {
+    margin-right: 20px;
+  }
+  
+  .amazon-nav a {
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+    transition: color 0.3s;
+  }
+  
+  .amazon-nav a:hover {
+    color: #FF9900; /* Change text color on hover */
+  }
+  
+.walmart-nav-divider {
+  color: #b0b0b0;
+  margin: 0 5px;
+  font-size: 18px;
+  font-weight: 400;
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.walmart-nav-list {
+  font-size: 15px; /* Ensure nav links and divider are visible */
+}
+
+.walmart-header--green ~ .walmart-nav .walmart-nav-green-btn,
+.homeg .walmart-nav-green-btn {
+  background-color: #0153E3 !important;
+}
+  

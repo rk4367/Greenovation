@@ -1,0 +1,269 @@
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100vw;
+  max-width: none;
+}
+
+.home__image {
+  width: 100%;
+  z-index: -1;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.home__container {
+  width: 100vw;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 32px;
+  width: 96vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 20px;
+}
+
+.card {
+  border-radius: 16px;
+  overflow: visible;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  min-width: 380px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  background: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.card-content {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shop-now-btn {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background: #0052a3;
+}
+
+.food-card {
+  background: linear-gradient(135deg, #fffbe7 0%, #fff3c4 100%);
+}
+.food-card h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+.food-card .subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.july4-card {
+  background: linear-gradient(135deg, #e3f2fd 0%, #b3e5fc 100%);
+}
+.july4-card .card-content {
+  color: white;
+}
+.july4-card h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.july4-card .subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+.july4-card::after {
+  content: '';
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 200px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.1)"/></svg>');
+  background-size: contain;
+}
+.beauty-card {
+  background: linear-gradient(135deg, #fce4ec 0%, #fde4f2 100%);
+}
+.beauty-card h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.beauty-card .price {
+  color: #e91e63;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.new-badge {
+  background: #2196f3;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+.stitch-card {
+  background: linear-gradient(135deg, #e3f7fd 0%, #c8e6fa 100%);
+}
+.stitch-card h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.laroche-card {
+  background: linear-gradient(135deg, #f1f8e9 0%, #e0f2f1 100%);
+}
+.laroche-card h3 {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.laroche-card .offer {
+  color: #4caf50;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.stockx-card {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+.stockx-card .card-content {
+  color: white;
+}
+.stockx-card h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.stockx-card .shop-now-btn {
+  background: white;
+  color: #1b5e20;
+}
+.jurassic-card {
+  background: linear-gradient(135deg, #eceff1 0%, #cfd8dc 100%);
+}
+.jurassic-card .card-content {
+  color: white;
+}
+.jurassic-card h3 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.victoria-card {
+  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%);
+}
+.victoria-card h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.walmart-card {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+}
+.walmart-card .card-content {
+  color: white;
+}
+.walmart-card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.walmart-card .subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+.walmart-card .shop-now-btn {
+  background: white;
+  color: #1976d2;
+}
+
+@media (max-width: 768px) {
+  .home__grid {
+    grid-template-columns: 1fr;
+  }
+  .july4-card,
+  .walmart-card {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .home__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.home__row {
+  display: unset;
+  margin-left: unset;
+  margin-right: unset;
+}
+
+.additional-card {
+  background: linear-gradient(135deg, #e8f4fd 0%, #d1ecf1 100%);
+}
+
+.july4-card,
+.stockx-card,
+.food-card,
+.beauty-card,
+.stitch-card,
+.laroche-card,
+.jurassic-card,
+.victoria-card,
+.walmart-card,
+.additional-card {
+  grid-column: span 1 !important;
+  min-height: unset !important;
+}

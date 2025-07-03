@@ -1,0 +1,121 @@
+footer {
+  position: relative;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.footer__feedbackSection {
+  width: 100vw;
+  background: #eef5ff;
+  padding: 60px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__feedbackPrompt {
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.footer__feedbackButtons {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__feedbackButton {
+  background: #fff;
+  color: #222;
+  border: 2px solid #222;
+  border-radius: 2em;
+  font-size: 0.9rem;
+  font-weight: 600;
+  /* padding: 16px 48px; */
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: none;
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer__feedbackButton:hover {
+  background: #f5f7fa;
+  color: #0153E3;
+  border-color: #0153E3;
+}
+
+.footer__linkContainer {
+  padding: 24px 25px 8px 25px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px 18px;
+  font-size: 15px;
+  background: #002E99;
+  min-height: unset;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.footer__linkContainer--row {
+  background: #002E99;
+}
+.footer__links {
+  text-align: left;
+}
+.footer__linksTitle {
+  font-size: 16px;
+  margin: 6px 0 14px;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 6px;
+  font-size: 15px;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+.footer__link:hover {
+  text-decoration: underline;
+  color: #ffc220;
+}
+.footer__copyright {
+  color: #fff;
+  font-size: 15px;
+  /* margin: 12px 0 0 0; */
+  padding: 25px 0 25px 0;
+  text-align: center;
+  background: #002E99;
+  /* padding-bottom: 16px;
+  border-top: none;
+  box-shadow: none; */
+}
+.ScrollUpButton__Container,
+.ScrollUpButton__Toggled {
+  background-color: transparent !important;
+  position: relative !important;
+  z-index: 1000;
+  margin-bottom: -50px;
+  margin-left: -50px !important;
+  width: 100% !important;
+  height: 35px !important;
+  padding: 10px 10px 0 10px !important;
+  outline: none !important;
+  opacity: 0 !important;
+  overflow: hidden;
+}
