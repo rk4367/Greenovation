@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Amazon Green (Vite + React)
 
 This project is now powered by [Vite](https://vitejs.dev/) and the latest React. All dependencies are up to date.
@@ -108,6 +107,3 @@ Our project integrates a web-based e-commerce platform with Amazon, with a focus
 *Machine Learning and AI*: Explore the use of machine learning and artificial intelligence for predicting user preferences, optimizing product recommendations, and automating certain tasks, such as classifying products based on their eco-friendliness.
 
 *Internationalization*: Consider expanding to international markets and adding support for multiple languages and currencies.
-=======
-# Greenovation
->>>>>>> e23dc9ed5acad71f524e3cf8321f1189b93b3c55
