@@ -1,6 +1,23 @@
 export const initialState = {
     basket: [],
-    history: [],
+    history: [
+        {
+            id: "test-1",
+            title: "New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB)",
+            price: 1099.00,
+            rating: 5,
+            image: "../images/tablet.jpg",
+            badge_id: 0
+        },
+        {
+            id: "test-2", 
+            title: "Reusable Water Bottle",
+            price: 19.99,
+            rating: 5,
+            image: "../images/bottle_eco.jpg",
+            badge_id: 2
+        }
+    ],
 };
 
 //selector

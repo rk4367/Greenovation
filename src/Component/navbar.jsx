@@ -144,7 +144,7 @@ const WalmartNavigationBar = () => {
       </ul>
       <div className="walmart-nav-green-btn-container">
         <Link to="/green" style={{ textDecoration: 'none' }}>
-          <button className="walmart-nav-green-btn">Greenovation Zone</button>
+          <button className="walmart-nav-green-btn">Buy Green</button>
         </Link>
       </div>
     </nav>

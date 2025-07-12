@@ -21,6 +21,7 @@ import Feedback from "./Component/feedback.jsx";
 import ProductDetails from "./Component/ProductDetails.jsx";
 import ProductDetails1 from "./Component/ProductDetails1.jsx";
 import FSubmitted from "./Component/Feedbacksubmitted.jsx";
+import QR from "./Component/qr.jsx";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/dashboard" element={[<Header />, <NavBarg/>, <Dashboard/>]} />
           <Route path="/product" element={[<Headergreen />, <NavBarg />, <ProductDetails />, <Footer />]}/>
           <Route path="/product1" element={[<Headergreen />, <NavBarg />, <ProductDetails1 />, <Footer />]}/>
+          <Route path="/qr" element={[<Header />, <QR />, <Footer />]}/>
 
         </Routes>
       </div>
